@@ -1,0 +1,22 @@
+Body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:white;
+}
+wrapper{
+    width:100vh;
+    height: 100vh;
+}
+.neon-text{
+color: #f706d6;
+text-shadow: 
+.1vw 0vw .25vw #f38be5, .2vw 0vw .25vw #f38be5, .4vw 0vw .25vw #f38be5,
+
+.1vw 0vw    0vw #f75be2, .2vw 0vw    0vw #f75be2, .4vw 0vw    0vw #f75be2,
+.1vw 0vw   .1vw #f75be2, .2vw 0vw   .1vw #f75be2, .4vw 0vw   .1vw #f75be2,
+.1vw 0vw    2vw #f75be2, .2vw 0vw    2vw #f75be2, .4vw 0vw    2vw #f75be2,
+
+.1vw 0vw    1vw #f706d6, .2vw 0vw    1vw #f706d6, .4vw 0vw    1vw #f706d6,
+.1vw 0vw    5vw #f706d6, .2vw 0vw    5vw #f706d6, .4vw 0vw    5vw #f706d6,
+.1vw 0vw   10vw #f706d6, .2vw 0vw   10vw #f706d6, .4vw 0vw   10vw #f706d6;
+}

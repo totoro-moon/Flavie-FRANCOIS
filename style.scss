@@ -1,4 +1,5 @@
-
+@import "./SCSS/variables.scss";
+@import "./SCSS/mixines.scss";
 @font-face {
     font-family: "GeosansLight";
     src: url(polices/GeosansLight.ttf) format('truetype');
@@ -12,28 +13,30 @@ html, body{
     margin:0;
     padding:0;
     p {
-    color: #8e8c8f;
-}
-    h3{ 
-        color: #f706d6;
-
-}
+    color: #7878a1;
+    }
     h5 {
-    color: #6f45a7;
+    color: $fontdarkpurpul;
     font-weight: bold;
     font-size: 1em;
 }
 }
 // menu navbar
 header{
-    .headlogo{
+    .headlogo {
     font-family: "Ambitive";
     font-size: 3em;
+    text-decoration: none;
+    padding-left: 30px;
+    &:hover {
+        color: $pinkcolor;
     }
-    nav{        
-        background-color: rgba(250, 250, 250, 0.9);
-        width: 100%;
-
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        }
+    .bg-d {
+        background: $bgtransparent;
     }
     ul{
         list-style: none;
@@ -41,26 +44,23 @@ header{
     li{
         display: inline-block;
         transition: all 0.5s ease-in;
+        padding: 20px;
+        &:hover {
+            background-color: $pinkcolor;
+        }
     }  
     a{
-        padding-right: 20px;
-        color:black;
-        &:hover{color:#f706d6}
+        color:$fontdarkpurpul;
+    }
     }     
-}
-// .fondnav{
-//         background-color: #163356;
-// }
-
 @media screen and(max-width: 991.98px) {
     .navbar {
         background: #fff;
     }
     .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
+        color: $fontdarkpurpul;
     }
 }
-
 //animation logo 
 .logo {
     position: absolute;
@@ -88,7 +88,7 @@ content: '';
     width: 0;
     height: 0;
     background: transparent;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 .logo a:hover:before{
 animation: animate-border 1s linear forwards;
@@ -97,7 +97,7 @@ animation: animate-border 1s linear forwards;
 0% {
     width: 0;
     height: 0;
-    border-top-color: #fcfcfc;
+    border-top-color: $pinkcolor;
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
@@ -105,16 +105,16 @@ animation: animate-border 1s linear forwards;
 50% {
     width: 100%;
     height: 0;
-    border-top-color: #fcfcfc;
-    border-right-color: #fcfcfc;
+    border-top-color:$pinkcolor;
+    border-right-color: $pinkcolor;
     border-bottom-color: transparent;
     border-left-color: transparent;
 }
 100% {
     width: 100%;
     height: 100%;
-    border-top-color: #fcfcfc;
-    border-right-color: #fcfcfc;
+    border-top-color: $pinkcolor;
+    border-right-color: $pinkcolor;
     border-bottom-color: transparent;
     border-left-color: transparent;
 }
@@ -128,7 +128,7 @@ height: 100%;
 width: 0;
 height: 0;
 background: transparent;
-border: 2px solid transparent;
+border: 3px solid transparent;
 }
 .logo a:hover:after{
 animation: animate-border-2 1s linear forwards;
@@ -141,148 +141,148 @@ animation-delay: 1s;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: #fcfcfc;
+    border-left-color: $pinkcolor;
 }
 50% {
     width: 0;
     height: 100%;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #fcfcfc;
-    border-left-color: #fcfcfc;
+    border-bottom-color:$pinkcolor;
+    border-left-color: $pinkcolor;
 }
 100% {
     width: 100%;
     height: 100%;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #fcfcfc;
-    border-left-color: #fcfcfc;
+    border-bottom-color: $pinkcolor;
+    border-left-color: $pinkcolor;
 }
+}
+//effet neon titre
+.neon-text {
+    @include effet-neon-rose-border;
+    @include effet-neon-rose-text;
+    
 }
 // image background
 .bg{
     background-image: url('images/cyberpunk-5135622_1920.jpeg');
-
-  /* Full height */
-    height: 100%; 
-
-  /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@include background;
 }
-
-//presentation
-.presentation {
+.bg-1{
+    background-image: url('images/buildings-1245953_1920.jpeg');
+@include background;
+}
+//home
+.home {
     height:100vh;
 }
+//présentation
+.image-pres{
+    width: 350px;
+}
 //compétences
-
 .Compétences {
-background-color: #f0eeee;
+    background-color: $bggrissection;
 }
 .img-comp{
     width: 30%;
-    
     }
 //parcours
-
-
+//timeline1
 .item {
     display: flex;
     max-width: 100%;
     margin: 0 auto;
-
     .image {
-        padding: 1em 2em;
+        padding: 1em 1.9em;
+        z-index: 1;
     > div {
         position: relative;
         text-align: center;
         font-size: 0.8em;
         &::after {
         content: '';
-        width: 100%;
+        width: 40%;
         height: 0;
-        border-bottom: 1px solid #232b50;
+        border-bottom: 2px solid $colortimeline1;
+        ;
         position: absolute;
         top: 2.75em;
-        left: 2.5em;
-        z-index: -1;
+        left: 6em;
         }
     }
     img {
         border-radius: 50%;
-        height: 5em;
-        border: 0.35em solid  #8c5dca;
+        height: 6em;
+        border: 0.35em solid $colortimeline1;
     }
     span {
         display: block;
         clear: both;
         padding: 0.25em 0;
         margin: 0.5em 0;
-        background-color: white;
-        border: black solid 1px;
+        background-color: $bgtransparent;
+        border:$pinkcolor solid 1px;
     }
 }
 .details {
     position: relative;
     flex-grow: 1;
+    div{
+    background-color: $bgtransparent;
+    }
     > div {
         width: 100%;
-        border: 1px solid #232b50;
+        border: 2px solid $colortimeline1;
+        ;
         border-radius: 0.5em;
-        padding: 1.5em;
+        padding: 0.75em;
         margin: 1em 0;
-   
-
         h5{
-        font-size: 1em;
+        // font-size: 1em;
         margin: 0;
         padding: 0 0 0.5em 0;
         letter-spacing: 0.1em;
     }
-        p {
-        margin: 0;
-        padding: 0;
+    p {
         line-height: 150%;
-        
     }
     }
     &::before {
         content: '';
         width: 0;
         height: 100%;
-        border-left: 1px solid #232b50;
+        border-left: 2px solid $colortimeline1;
         position: absolute;
-        top: 0;
-        left: -4.35em;
-        z-index: -1;
+        top: 20px;
+        left: -4em;
     }
 }
 }
 //portfolio
 .portfolio{
-    background-color: #f0eeee;
+    background-color: $bggrissection;
 }
-//formation
+//formation-timeline2
 .formation {
     .circle {
         padding: 16px 20px;
         border-radius: 30%;
-        background-color: #8c5dca;
+        background-color: $colortimeline2;
         color: #fff;
         max-height: 50px;
         z-index: 2;
     }
-
     .connecting-lines.row .col-2 {
         align-self: stretch;
     }
     .connecting-lines.row .col-2::after {
         content: "";
         position: absolute;
-        border-left: 3px solid #6f45a7;
+        border-left: 3px solid $colortimeline2;
         z-index: 1;
     }
     .connecting-lines.row .col-2.bottom::after {
@@ -292,7 +292,7 @@ background-color: #f0eeee;
     }
     .connecting-lines.row .col-2.full::after {
         height: 100%;
-        left: calc(50% - 3px);
+        left: calc(49% - 2px);
     }
     .connecting-lines.row .col-2.full-left::after {
         height: 100%;
@@ -309,7 +309,7 @@ background-color: #f0eeee;
         height: 40px;
     }
         .timeline hr {
-        border-top: 3px solid #6f45a7;
+        border-top: 3px solid $colortimeline2;
         margin: 0;
         top: 17px;
         position: relative; 
@@ -319,7 +319,7 @@ background-color: #f0eeee;
         overflow: hidden;
     }
     .timeline .corner {
-        border: 3px solid #6f45a7;
+        border: 3px solid$colortimeline2;
         width: 100%;
         position: relative;
         border-radius: 15px;
@@ -343,24 +343,36 @@ background-color: #f0eeee;
 }
 //contact
 form{
-.form-control{
-    background-color: rgba(250, 250, 250, 0.2);
+    p{
+    color: white;
+    padding: 0;
+    }
+    input{
+        background-color: $bgtransparent;
+        width: 300px;
+        border: white 1px solid;
+    }
+    textarea {
+        background-color: $bgtransparent;
+        width: 300px;
+        height: 210px;
+        border: white 1px solid;
 
-}
-textarea {
-    width: 95%;
-    rows: 500px;
-    // // &:active{
-    // //     background-color: white;
-
-}
+        }
+    button{
+        width: 70px;
+        border: white 1px solid;
+    &:hover {
+        background-color: $pinkcolor;
+        
+        }
+    }
 }
 //footer
 footer{
-    background-color: rgba(250, 250, 250, 0.5);
-;
-.icones i {
+    background-color: $bgtransparent;
+    .icones i{
     font-size:36px;
     color:black;
-    }
+} 
 }
