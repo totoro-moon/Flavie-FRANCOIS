@@ -1,0 +1,39 @@
+
+@mixin background{
+/* hauteur */
+// height: 100%;
+width: 100%;
+/* Center et placer l'image */
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+position: relative;
+}
+
+@mixin effet-neon-rose-border {
+    box-shadow:
+        0 0 0.1vw 0.2vw #f7c1ef,
+        0 0 0.4vw 0.2vw #f76be4,
+        0 0 2vw 0.2vw #f706d6,
+
+        inset 0 0 1.5vw 0.4vw #f14fdc,
+        inset 0 0 0.4vw 0.2vw #f76be4,
+        inset 0 0 0.5vw 0.2vw #f7c1ef;
+        border-radius: 0.2rem;
+}
+
+@mixin effet-neon-rose-text {
+    
+    color:#f7cef1;
+    text-shadow:
+        .1vw 0vw  .25vw #f38be5, .2vw 0vw  .25vw #f38be5, .4vw 0vw  .25vw #f38be5,
+
+        .1vw 0vw    0vw #f551df, .2vw 0vw    0vw #f551df, .4vw 0vw    0vw #f551df,
+        .1vw 0vw   .1vw #f551df, .2vw 0vw   .1vw #f551df, .4vw 0vw   .1vw #f551df,
+        .1vw 0vw    2vw #f551df, .2vw 0vw    2vw #f551df, .4vw 0vw    2vw #f551df,
+
+        .1vw 0vw    1vw #f706d6, .2vw 0vw    1vw #f706d6, .4vw 0vw    1vw #f706d6,
+        .1vw 0vw    5vw #f706d6, .2vw 0vw    5vw #f706d6, .4vw 0vw    5vw #f706d6,
+        .1vw 0vw   10vw #f706d6, .2vw 0vw   10vw #f706d6, .4vw 0vw   10vw #f706d6;
+}
+

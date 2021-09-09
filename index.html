@@ -4,70 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Lien pour les font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS file page -->
     <link rel="stylesheet" href="style.css">
     <title>CV Flavie FRANCOIS</title>
 </head>
 
 <body>
+<!--******************************************** header ***************************************-->
     <header class="z-index-1">
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg bg-d fixed-top">
-                    <button class="navbar-toggler fixed-top" type="button" data-toggle="collapse"
-                        data-target="#navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a href="#homepage" class="headlogo">Flavie François</a>
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav ml-auto text-uppercase font-weight-bold ">
-                            <li class="nav-item active "><a href="#pres">Présentation</a></li>
-                            <li class="nav-item "><a href="#competence">Compétences</a></li>
-                            <li class="nav-item "><a href="#port">Portfolio</a></li>
-                            <li class="nav-item "><a href="#parcour">Parcours professionel</a></li>
-                            <li class="nav-item "><a href="#formationpro">Formation</a></li>
-                            <li class="nav-item "><a href="#contacter">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-toggleable-md bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" width="200" height="auto" class="d-inline-block align-top" alt="logo"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#pres">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competence">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#port">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parcour">Parcours pro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formationpro">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacter">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
-    <!--section home-->
-    <section class="home bg" id="homepage">
+<!--******************************************** section home ***************************************-->
+    <section class="home bg-0" id="homepage">
         <div class="container-fluid">
-            <div class="text-uppercase text-light align-items-center">
-                <div class="logo">
-                    <a href="#pres">Développeuse front-end junior</a>
+            <div class=" text-light align-items-center">
+                <div class="logo" href="#pres">
+                    <h1 class="text-uppercase text-center">Flavie FRANCOIS</h1>
+                    <!-- <h2 class="text-lowercase text-center pt-4">développeuse web</h2>
+                    <h3 class="text-lowercase text-center">junior</h3> -->
                 </div>
             </div>
         </div>
     </section>
-    <!--section presentation-->
-    <section class="presentation" id="pres">
-        <div class="container py-5">
-            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase">
+<!--******************************************** section presentation ***************************************-->
+    <section class="presentation py-5" id="pres">
+        <div class="container">
+            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase pt-5">
                 <h3 class="neon-text font-weight-bold p-4">qui suis-je?</h3>
             </div>
-            <div class="container p-5">
-                <div class="row justify-content-center text-uppercase">
-                    <img class="image-pres justify-content-center" src="./images/flavie.jpg" alt="photo de flavie" />
+            <div class="container">
+                <div class="row justify-content-center text-uppercase ">
+                    <img class="image-pres justify-content-center pt-5" src="assets/images/flavie.jpg" alt="photo de flavie" />
+                <h6 class="p-5 text-justify">Initialement diplômé en communication visuelle de l’ESAD d’Orléans. J’ai travaillé plusieurs années en tant que responsable de communication et graphiste. 
+                    J’ai décidé en 2021 d’effectuer une nouvelle formation dans le développement web au sein de la structure des Descodeuses et de m’orienter plus spécifiquement 
+                    dans le domaine du digital. Je suis actuellement à la recherche d’une nouvelle aventure professionnelle où j’aimerais pouvoir déployer mes qualités créatives 
+                    et mobilisées mes nouvelles compétences techniques.
+                </h6>
                 </div>
             </div>
+        </div>
     </section>
-    <!--section compétences-->
-    <section class="Compétences" id="competence">
-        <div class="container py-5">
-            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase">
+<!--******************************************** section compétences ***************************************-->
+    <section class="Compétences bg-2 py-5" id="competence">
+        <div class="container bloc py-5">
+            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase pt-5">
                 <h3 class="neon-text font-weight-bold p-4">Compétences</h3>
             </div>
         </div>
         <div class="container">
             <div class="row text-center text-uppercase">
-                <div class="col-md-4">
-                    <img src="images/logo1.png" alt="logo carré" />
+                <div class="bloc col-md-4">
+                    <img class="img-comp" src="assets/images/logo1.png" alt="logo_1" />
                     <h5 class="my-3">Systèmes d'exploitation</h5>
                     <div class="texte-left">
                         <p>Mac OSX</p>
@@ -75,47 +95,50 @@
                         <p>Linux</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/logo2.png" alt="" />
-                    <h5 class="my-3">Langages</h5>
+                <div class="bloc col-md-4">
+                    <img class="img-comp" src="assets/images/logo2.png" alt="logo_2" />
+                    <h5 class="my-3">Front-end</h5>
                     <div>
                         <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
+                        <p>CSS / SASS</p>
+                        <p>JAVASCRIPT / JQUERY</p>
+                        <p>BOOTSTRAP</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/logo3.png" alt="" />
-                    <h5 class="my-3">CMS/Framework</h5>
+                <div class="bloc col-md-4">
+                    <img class="img-comp" src="assets/images/logo4.png" alt="logo_3" />
+                    <h5 class="my-3">Back-end</h5>
                     <div>
-                        <p>Wordpress</p>
-                        <p>Bootstrap</p>
+                        <p>PHP</p>
+                        <p>MySQL</p>
+                        <p>WORKBENCH</p>
+                        <p>PHPMYADMIN</p>
                     </div>
                 </div>
             </div>
             <div class="row text-center text-uppercase">
-                <div class="col-md-4">
-                    <img src="images/logo4.png" alt="" />
-                    <h5 class="my-3">Logiciels</h5>
+                <div class="bloc col-md-4">
+                    <img class="img-comp" src="assets/images/logo3.png" alt="logo_4" />
+                    <h5 class="my-3">Workflow</h5>
                     <div>
-                        <p>atom</p>
-                        <p>Visual Studio code</p>
-                        <p>Github</p>
+                        <p>VISUAL CODE/ ATOM</p>
+                        <p>GITHUB</p>
+                        <p>FILEZILLA</p>
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+                <div class="bloc col-md-4">
+                    <img class="img-comp" src="assets/images/logo5.png" alt="logo_5" />
+                    <h5 class="my-3">Design</h5>
+                    <div>
                         <p>Photoshop</p>
                         <p>Illustrator</p>
                         <p>Indesign</p>
                         <p>Adobe xd</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/logo5.png" alt="" />
-                    <h5 class="my-3">Langues</h5>
-                    <div>
-                        <p>Anglais</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/logo6.png" alt="" />
+                <div class="bloc col-md-4">
+                    <img class="img-comp" src="assets/images/logo6.png" alt="logo_6" />
                     <h5 class="my-3">Savoir-être</h5>
                     <div>
                         <p>capacité d'adaptation</p>
@@ -127,11 +150,888 @@
             </div>
         </div>
     </section>
-    <!--section parcours-->
-    <section class="parcours bg-1" id="parcour">
+<!--******************************************** section portfolio ***************************************-->
+    <section class="portfolio" id="port">
         <div class="container py-5">
-            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase">
-                <h3 class="neon-text font-weight-bold p-4">Parcours professionel</h3>
+            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase pt-5">
+                <h3 class="neon-text font-weight-bold p-4">Portfolio</h3>
+            </div>
+            <div class="row justify-content-center align-items-center text-uppercase pt-5">
+                <h4 class="text-white">Projets web</h4>
+            </div>
+        </div>
+        <div class="container-fluid pb-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white"
+                        src="assets/images/modal/projet_big_black_cook.png" alt="capture ecran du projet du site big-black-cook"/>
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_1">PROJET BIG BLACK COOK</a>
+                    </h5>
+                </div>
+                <!-- Modal -->
+                <div class="modal modal-full fade" id="portfolioModal_1" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_1Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_1Label"> BIG BLACK COOK Carribean street food
+                                        (html / css / sass / bootstrap / media queries)<a
+                                            class="modal-link text-center"
+                                            href="https://totoro-moon.github.io/BIG_BLACK_COOK/" target="_blank">
+                                            vers le site BIG BLACK COOK</a></h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>  
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_1" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK COOK
+                                            </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook_zoning.png" height="500" width="1000" alt="image big black cook site">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK COOK
+                                            </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook_wireframe.png" height="500" width="1000" alt="planche wireframe">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK COOK
+                                            </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook.png" height="500" width="1000" alt="Extrait du site page big black cook">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK QUI?
+                                            </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook_1.png" height="500" width="1000" alt="Extrait du site page big black qui">
+                                        </div>
+                                        <div class="carousel-item border-border-white">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK
+                                                QUOI?
+                                            </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook_2.png" height="500" width="1000" alt="Extrait du site page big black quoi">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK OU?
+                                            </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook_3.png" height="500" width="1000" alt="Extrait du site page big black ou">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site Big Black Cook / Page BIG BLACK
+                                                ALLO? </p>
+                                            <img class="img-fluid border border-white" src="assets/images/modal/projet_big_black_cook_4.png" height="500" width="1000" alt="Extrait du site page big black allo">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_1" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_1" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet paysagiste-->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white"
+                        src="assets/images/modal/projet_paysagiste_jo_Baobab_1.png"
+                        alt="capture ecran du projet du site paysagiste" />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_2">PROJET PAYSAGISTE</a>
+                    </h5>
+                </div>
+                <!-- Modal -->
+                <div class="modal modal-full fade" id="portfolioModal_2" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_2Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_2Label"> JO BAOBAB PAYSAGISTE (html / css / sass / bootstrap)<a
+                                            class="modal-link text-center"
+                                            href="https://totoro-moon.github.io/projet-jo-BAOBAB/" target="_blank">
+                                            cliquez ici pour acceder au site jo Baobab</a></h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_2" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner active">
+                                        <div class="carousel-item active">
+                                            <p class="text-center"> Maquettage du projet jo Baobab</p>
+                                            <img class="img-fluid" src="assets/images/modal/projet_paysagiste_jo_Baobab_6.png" height="500" width="1000" alt="Maquettage du projet jo Baobab">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site jo Baobab / Catégorie présentation
+                                            </p>
+                                            <img class="img-fluid" src="assets/images/modal/projet_paysagiste_jo_Baobab_1.png" height="500" width="1000" alt="Extrait du site jo Baobab catégorie présentation">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site jo Baobab / Catégorie préstation
+                                            </p>
+                                            <img class="img-fluid" src="assets/images/modal/projet_paysagiste_jo_Baobab_2.png" height="500" width="1000" alt="Extrait du site jo Baobab catégorie préstation">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site jo Baobab / Catégorie projet </p>
+                                            <img class="img-fluid" src="assets/images/modal/projet_paysagiste_jo_Baobab_3.png" height="500" width="1000" alt="Extrait du site jo Baobab catégorie projet">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site jo Baobab / Catégorie devis </p>
+                                            <img class="img-fluid" src="assets/images/modal/projet_paysagiste_jo_Baobab_4.png" height="500" width="1000" alt="Extrait du site jo Baobab catégorie devis">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site jo Baobab / Catégorie contact </p>
+                                            <img class="img-fluid" src="assets/images/modal/projet_paysagiste_jo_Baobab_5.png" height="500" width="1000" alt="Extrait du site jo Baobab catégorie contact">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_2" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_2" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet jeu -->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="assets/images/modal/jeu_1.png"
+                        alt="image extrait du site jeu memory ghibli" />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_3">PROJET JEU MEMORY GHIBLI </a>
+                    </h5>
+                </div>
+                <!-- Modal jeu -->
+                <div class="modal modal-full fade" id="portfolioModal_3" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_3Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_3Label">GHIBLI MEMORY (html / css / java script)
+                                        <a class="modal-link text-center"
+                                            href="https://totoro-moon.github.io/Javascript-Projet-Jeu/" target="_blank">
+                                            cliquez ici pour acceder au site du jeu memory Ghibli</a>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_3" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p class="text-center"> Extrait du jeux memory Ghibly / Régles du jeu </p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_1.png" height="500" width="1000" alt="Extrait du jeux memory Ghibly / Régles du jeu">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du jeux memory Ghibly / Plateau de jeu dedépart </p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_2.png" height="500" width="1000" alt="Extrait du jeux memory Ghibly régles du jeu">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du jeux memory Ghibly / Plateau de jeu en début de partie</p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_3.png" height="500" width="1000" alt="Extrait du jeux memory Ghibly plateau de jeu en début de partie">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage-Zoning du jeux memory Ghibly</p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_4.png" height="500" width="1000" alt="Maquettage Zoning du jeux memory Ghibly">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage-Zoning du jeu memory Ghibly</p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_5.png" height="500" width="1000" alt="Maquettage Zoning du jeu memory Ghibly">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage-wireframe du jeu memory Ghibly</p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_6.png" height="500" width="1000" alt="Maquettage wireframe du jeu memory Ghibly">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage-wireframe du jeu memory Ghibly</p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_7.png" height="500" width="1000" alt="Maquettage wireframe du jeu memory Ghibly">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage-wireframe du jeu memory Ghibly</p>
+                                            <img class="img-fluid" src="assets/images/modal/jeu_8.png" height="500" width="1000" alt="Maquettage wireframe du jeu memory Ghibly">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_3" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_3" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet jameela -->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="assets/images/modal/jameela_1.png" alt="image extrait site jameela"/>
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_4">PROJET E-COMMERCE JAMEELA </a>
+                    </h5>
+                </div>
+                <!-- Modal jameela-->
+                <div class="modal modal-full fade" id="portfolioModal_4" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_4Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_4Label"> JAMEELA E-COMMERCE (html / css / bootstrap / java
+                                        script / jquery)<a class="modal-link text-center"
+                                            href="https://totoro-moon.github.io/ecommerce_jquery_jameela_beauty-1/index.html"
+                                            target="_blank"> Cliquez ici pour acceder au site Jameela</a></h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_4" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner active">
+                                        <div class="carousel-item active">
+                                            <p class="text-center">Maquettage du site Jameela / Wireframe et maquette page d'accueil </p>
+                                            <img class="img-fluid" src="assets/images/modal/maquette_jameeela_1.png" height="500" width="1000" alt="Wireframe et maquette page d'accueil">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage du site Jameela / maquette page beauty,login form, contact, barre de recherche </p>
+                                            <img class="img-fluid" src="assets/images/modal/maquette_jameeela_2.png" height="500" width="1000" alt="maquette page beauty,login form, contact, barre de recherche ">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Maquettage du site Jameela / maquette page tode bags, sunglasses, swimsuits </p>
+                                            <img class="img-fluid" src="assets/images/modal/maquette_jameeela_3.png" height="500" width="1000" alt="maquette page tode bags, sunglasses, swimsuits">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Catégorie acceuil</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_1.png" height="500" width="1000" alt="Extrait du site Jameela catégorie acceuil">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Catégorie beauty</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_2.png" height="500" width="1000" alt="Extrait du site Jameela catégorie beauty">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Catégorie tode bags</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_3.png" height="500" width="1000" alt=">Extrait du site Jameela catégorie tode bags">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Catégorie sunglasses</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_4.png" height="500" width="1000" alt="Extrait du site Jameela catégorie sunglasses">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Produits catégorie sunglasses</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_5.png" height="500" width="1000" alt="Extrait du site Jameela produits catégorie sunglasses">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Catégorie swimsuits</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_6.png" height="500" width="1000" alt="Extrait du site Jameela catégorie swimsuits">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait du site Jameela / Catégorie contact</p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_7.png" height="500" width="1000" alt="Extrait du site Jameela catégorie contact">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"> Extrait du site Jameela / Panier </p>
+                                            <img class="img-fluid" src="assets/images/modal/jameela_8.png" height="500" width="1000" alt="Extrait du site Jameela panier ">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_4" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_4" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet #ahtasanté -->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="assets/images/modal/ahtasanté_1.png" alt="image extrait site AHTASANTé"/>
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_5">PROJET #AHTASANTE</a>
+                    </h5>
+                </div>
+                <!-- Modal #ahtasanté -->
+                <div class="modal modal-full fade" id="portfolioModal_5" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_5Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_5Label"> #AHTASANTE ( html / css / bootstrap / java
+                                        script) Hackathon Descodeuses 2021 <a
+                                            class="modal-link text-center" href="https://ahtasante.github.io/"
+                                            target="_blank"> Cliquez ici pour acceder au site #AHTASANTE</a></h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_5" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner active">
+                                        <div class="carousel-item active">
+                                            <p class="text-center">Maquettage #Ahtasanté</p>
+                                            <img class="img-fluid" src="assets/images/modal/ahtasanté.png" height="500" width="1000" alt="Maquettage Ahtasante">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait site #Ahtasanté / Catégorie 93 Express</p>
+                                            <img class="img-fluid" src="assets/images/modal/ahtasanté_1.png" height="500" width="1000" alt="Extrait site Ahtasante categorie 93 Express">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait site #Ahtasanté / Catégorie Ghett'up</p>
+                                            <img class="img-fluid" src="assets/images/modal/ahtasanté_2.png" height="500" width="1000" alt="xtrait site Ahtasante categorie Ghett'up">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait site #Ahtasanté / Catégorie projet</p>
+                                            <img class="img-fluid" src="assets/images/modal/ahtasanté_3.png" height="500" width="1000" alt="Extrait site Ahtasante categorie projet">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait site #Ahtasanté / Catégorie projet l'évenement</p>
+                                            <img class="img-fluid" src="assets/images/modal/ahtasanté_4.png" height="500" width="1000" alt="Extrait site Ahtasante categorie projet l'évenement">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Extrait site #Ahtasanté / Catégorie contact</p>
+                                            <img class="img-fluid" src="assets/images/modal/ahtasanté_5.png" height="500" width="1000" alt="Extrait site Ahtasante categorie contact">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_5" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_5" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet 6 -->
+                <!-- <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="assets/images/modal/" alt="..." />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_4">PROJET 6</a>
+                    </h5>
+                </div> -->
+                <!-- Modal 6 -->
+                <!-- <div class="modal modal-full fade" id="portfolioModal_6" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_6Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body"> -->
+                                <!-- Modal Header -->
+                                <!-- <div class="modal-header">
+                                    <h4 class="portfolioModal_6Label">PROJET 6 <a class="modal-link text-center" href="..."
+                                            target="_blank"> Cliquez ici pour acceder au site ...</a></h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div> -->
+                                <!-- Carrousel -->
+                                <!-- <div id="portfolioCarousel_6" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner active">
+                                        <div class="carousel-item active">
+                                            <p class="text-center">...</p>
+                                            <img class="img-fluid" src="assets/images/modal/" height="500" width="1000" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">...</p>
+                                            <img class="img-fluid" src="assets/images/modal/" height="500" width="1000" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">...</p>
+                                            <img class="img-fluid" src="assets/images/modal/" height="500" width="1000" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">...</p>
+                                            <img class="img-fluid" src="assets/images/modal/" height="500" width="1000" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">...</p>
+                                            <img class="img-fluid" src="assets/images/modal/" height="500" width="1000" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">...</p>
+                                            <img class="img-fluid" src="assets/images/modal/" height="500" width="1000" alt="">
+                                        </div>
+                                    </div> -->
+                                    <!-- Carrousel  control -->
+                                    <!-- <a class="carousel-control-prev" href="#portfolioCarousel_5" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_5" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- fin container -->
+            </div>
+        </div>
+        <!-- projet graphique-->
+        <div class="container-fluid pb-5">
+            <div class="row justify-content-center align-items-center text-uppercase pb-5">
+                <h4 class="text-white">DESIGN GRAPHIQUE</h4>
+            </div>
+            <div class="row justify-content-center">
+                <!-- projet image de marque-->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="assets/images/modal/image_de_marque.png" alt="logos de marque" />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                        data-target="#portfolioModal_7">IMAGE DE MARQUE</a>
+                    </h5>
+                </div>
+                <!-- Modal -->
+                <div class="modal modal-full fade" id="portfolioModal_7" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_7Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_7Label">IMAGE DE MARQUE (Photographie / Photoshop / Illustrator)
+                                        <a class="modal-link" href="https://www.instagram.com/obedistribution/"
+                                            target="_blank"> Instagram O'be distribution</a>
+                                        <a class="modal-link" href="https://www.facebook.com/obedistribution"
+                                            target="_blank"> Facebook O'be distribution</a>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_7" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p class="text-center ">Logo animé Fcukin Flava</p>
+                                            <img class="img-fluid pt-5" src="./assets/images/modal/logo-smoke-ff.gif" height="500" width="1000" alt="Logo animé Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la gamme e-liquide ADV Low de chez Fcukin Flava </p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_low.png" height="500" width="1000" alt="Visuel de la gamme e-liquide ADV Low de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel produits de la gamme ADV Low de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_low_1.png" height="500" width="1000" alt="Visuel produits de la gamme ADV Low de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel produits de la gamme ADV ADV Low de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_low_2.png" height="500" width="1000" alt="Visuel produits de la gamme ADV ADV Low de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel produits de la gamme ADV ADV Low de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_low_3.png" height="500" width="1000" alt="Visuel produits de la gamme ADV ADV Low de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la gamme e-liquide FFX de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_1.png" height="500" width="1000" alt="Visuel de la gamme e-liquide FFX de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Morning Crunchies de la gamme e-liquide FFX</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_2.png" height="500" width="1000" alt="Visuel Morning Crunchies de la gamme e-liquide FFX">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Ask Your Mama de la gamme e-liquide FFX</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_3.png" height="500" width="1000" alt="Visuel Ask Your Mama de la gamme e-liquide FFX">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Lime Ice Cream de la gamme e-liquide FFX</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_4.png" height="500" width="1000" alt="Visuel Lime Ice Cream de la gamme e-liquide FFX">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Sirap Ais de la gamme e-liquide FFX</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_5.png" height="500" width="1000" alt="Visuel Sirap Ais de la gamme e-liquide FFX">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Vanilla Rose de la gamme e-liquide FFX</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_6.png" height="500" width="1000" alt="Visuel Vanilla Rose de la gamme e-liquide FFX">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Grapple de la gamme e-liquide FFX</p>
+                                            <img class="img-fluid" src="./assets/images/modal/FFX_7.png" height="500" width="1000" alt="Visuel Grapple de la gamme e-liquide FFX">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_0.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_1.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_22.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_3.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_4.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_5.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_6.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_7.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_8.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_9.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel Instagram de la gamme e-liquide ADV de chez
+                                                Fcukin Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ADV_10.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la gamme e-liquide Op Juice </p>
+                                            <img class="img-fluid" src="./assets/images/modal/op_juice.png" height="500" width="1000" alt="Visuel Instagram de la gamme e-liquide ADV de chez Fcukin Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel animé Ptit'Dej Monster</p>
+                                            <img class="img-fluid" src="./assets/images/modal/ptitdejmonster-insta.gif" height="auto" width="1000" alt="Visuel animé Ptit'Dej Monster">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la Gamme e-liquide Steam Buddie</p>
+                                            <img class="img-fluid" src="./assets/images/modal/SteamBuddies.jpg" height="500" width="1000" alt="Visuel de la Gamme e-liquide Steam Buddie">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel des produits Toby strow et Sticky Mango, e-liquide de chez Steam Buddie</p>
+                                            <img class="img-fluid" src="./assets/images/modal/SteamBuddies_1.jpg" height="500" width="1000" alt="produits Toby strow et Sticky Mango">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel des produits Rasp Lemonade, rainbowdrop et apple duo, e-liquide de chez Steam Buddie</p>
+                                            <img class="img-fluid" src="./assets/images/modal/SteamBuddies_2.jpg" height="500" width="1000" alt="produits Rasp Lemonade, rainbowdrop et apple duo">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel des produits Banapan, apple cola et sour cola, e-liquide de chez Steam Buddie</p>
+                                            <img class="img-fluid" src="./assets/images/modal/SteamBuddies_3.jpg" height="500" width="1000" alt="produits Banapan, apple cola et sour cola">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la gamme Mojo Vapors e-liquide de chez Liquid Arom</p>
+                                            <img class="img-fluid" src="./assets/images/modal/liquiArom_1.png" height="500" width="1000" alt="isuel de la gamme Mojo Vapors e-liquide de chez Liquid Arom">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la gamme Tasty Collection e-liquide de chez Liquid Arom</p>
+                                            <img class="img-fluid" src="./assets/images/modal/liquiArom_2.png" height="500" width="1000" alt="Visuel de la gamme Tasty Collection e-liquide de chez Liquid Arom">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel de la gamme e-liquide cbd de chez Weecl</p>
+                                            <img class="img-fluid" src="./assets/images/modal/weecl_1.png" height="500" width="1000" alt="isuel de la gamme e-liquide cbd de chez Weecl">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Visuel des produits e-liquide cbd de chez Weecl</p>
+                                            <img class="img-fluid" src="./assets/images/modal/weecl_2.png" height="500" width="1000" alt="isuel des produits e-liquide cbd de chez Weecl">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_7" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_7" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet objet de communication-->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="./assets/images/modal/objet_vans_FcukinFlava.png"
+                        alt="" />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_9">OBJET DE COMMUNICATION</a>
+                    </h5>
+                </div>
+                <!-- Modal -->
+                <div class="modal modal-full fade" id="portfolioModal_9" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_9Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_9Label">OBJET DE COMMUNICATION (Photoshop / Illustrator / Indesign / Impression)
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_9" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p class="text-center">Chaussure Vans by Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_vans_FcukinFlava_1.png" height="500" width="1000" alt="Chaussure Vans by Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Chaussure Vans by Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_vans_FcukinFlava.png" height="500" width="1000" alt="Chaussure Vans by Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Hoodie et T-shirt Fcukin'Flava apparel</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_t-shirt_FcukinFlava_1.png" height="500" width="1000" alt="Hoodie et T-shirt Fcukin'Flava apparel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Hoodie et T-shirt Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_t-shirt_FcukinFlava_2.png" height="500" width="1000" alt="Hoodie et T-shirt Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Bonnet brodé Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_bonnet_FcukinFlava.png" height="500" width="1000" alt="onnet brodé Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Menu de la gamme ADV Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_menu_adv_FcukinFlava.png" height="500" width="1000" alt="Menu de la gamme ADV Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Menu de la gamme ADV low Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_menu_advlow_FcukinFlava.png" height="500" width="1000" alt="Menu de la gamme ADV low Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Menu de la gamme FFX low Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_menu_ffx_FcukinFlava.png" height="500" width="1000" alt="Menu de la gamme FFX low Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Stickers Fcukin'Flava</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_stickers_FcukinFlava.png" height="500" width="1000" alt="Stickers Fcukin'Flava">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">T-shirt Ptit'Dej Monster</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_T-shirt_ptit'dejmonster.png" height="500" width="1000" alt="T-shirt Ptit'Dej Monster">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">T-shirt et casquette "old school vape" O'be distribution</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_o'be_1.png" height="500" width="1000" alt="T-shirt et casquette old school vape O'be distribution">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">T-shirt noir "old school vape" O'be distribution</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_o'be_2.png" height="500" width="1000" alt="T-shirt et casquette old school vape O'be distribution">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">T-shirt "old school vape" O'be distribution</p>
+                                            <img class="img-fluid" src="./assets/images/modal/objet_o'be_3.png" height="500" width="1000" alt="T-shirt et casquette old school vape O'be distribution">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_9" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_9" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- creation marque -->
+                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="assets/images/modal/DamnJuice_0.png"
+                        alt="capture ecran produits Damn Juice" />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_8">CREATION DE MARQUE DAMN JUICE</a>
+                    </h5>
+                </div>
+                <!-- Modal -->
+                <div class="modal modal-full fade" id="portfolioModal_8" tabindex="-1" role="dialog"
+                    aria-labelledby="portfolioModal_8Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_8Label">DAMN JUICE (illustrator/photoshop)</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_8" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner active">
+                                        <div class="carousel-item active">
+                                            <p class="text-center">Réalisation graphique de la marque DAMN JUICE gamme de e-liquide</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_0.png" height="500" width="1000" alt=" Réalisation graphique de la marque DAMN JUICE gamme de e-liquide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Etiquette Eden Twin monster DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_1.png" height="500" width="1000" alt="Etiquette Eden Twin monster DAMN JUICE">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Etiquette Bubble Taj' monster DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_2.png" height="500" width="1000" alt="Etiquette Bubble Taj' monster DAMN JUICE">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Etiquette Glou Tonia monster DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_3.png" height="500" width="1000" alt="Etiquette Glou Tonia monster DAMN JUICE">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Etiquette Don Cigario monster DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_4.png" height="500" width="1000" alt="Etiquette Don Cigario monster DAMN JUICE">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Etiquette Panda Crula' monster DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_5.png" height="500" width="1000" alt="Etiquette Panda Crula' monster DAMN JUICE">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Création de logo pour les casquette DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_6.png" height="500" width="1000" alt="Création de logo pour les casquette DAMN JUICE">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Création de logo pour les T-shirts DAMN JUICE</p>
+                                            <img class="img-fluid" src="assets/images/modal/DamnJuice_7.png" height="500" width="1000" alt="réation de logo pour les T-shirts DAMN JUICE">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_8" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_8" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- projet dessin -->
+                <div class="col-10 col-md-5 col-lg-4 pt-4 mb-3 mr-3 border border-white">
+                    <img class="img-fluid border border-white" src="./assets/images/modal/dessin_chat.png" alt="" />
+                    <h5 class="pt-3 d-flex justify-content-center">
+                        <a href="#" class="gallery-to-carousel btn btn-outline-light" data-toggle="modal"
+                            data-target="#portfolioModal_10">DESSINS</a>
+                    </h5>
+                </div>
+                <!-- Modal -->
+                <div class="modal modal-full fade" id="portfolioModal_10" tabindex="-1" role="dialog"
+                    aria-labelledby="mportfolioModal_10Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="portfolioModal_10Label">DESSINS (CSS / Illustrator / Canvas)
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Carrousel -->
+                                <div id="portfolioCarousel_10" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <p class="text-center"><a href="https://totoro-moon.github.io/Chat_Boule_Dessin_CSS/"
+                                                target="_blank">Dessin chat CSS </a></p>
+                                            <img class="img-fluid" src="./assets/images/modal/dessin_chat.png" height="500" width="1000" alt="Dessin chat CSS">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"><a href="https://totoro-moon.github.io/Canvas-Exercice-4-glace/"
+                                                target="_blank">Dessin glace canvas</a></p>
+                                            <img class="img-fluid" src="./assets/images/modal/dessin_glace.png" height="500" width="1000" alt="Dessin glace canvas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center"><a href="https://totoro-moon.github.io/Canvas-Exercice-3-pain-d-epice/"
+                                                target="_blank">Dessin pain d'épice canvas</a></p>
+                                            <img class="img-fluid" src="./assets/images/modal/dessin_pain_d'épice.png" height="500" width="1000" alt="Dessin pain d'épice canvas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <p class="text-center">Dessin bunny girl illustrator</p>
+                                            <img class="img-fluid" src="./assets/images/modal/dessin_bonnie.png" height="500" width="1000" alt="essin bunny girl illustrator">
+                                        </div>
+                                    </div>
+                                    <!-- Carrousel  control -->
+                                    <a class="carousel-control-prev" href="#portfolioCarousel_10" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#portfolioCarousel_10" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin container -->
+            </div>
+        </div>
+    </section>
+<!--******************************************** section parcours ***************************************-->
+    <section class="parcours bg-1" id="parcour">
+        <div class="container p-4">
+            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase pt-5">
+                <h3 class="neon-text font-weight-bold text-center p-4">Parcours professionel</h3>
             </div>
         </div>
         <!--timeline1-->
@@ -139,7 +1039,7 @@
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/1.jpeg" alt="photo bureau communication" />
+                        <img src="assets/images/images-timeline/1.jpeg" alt="photo bureau communication" />
                         <span>
                             2018-2020
                         </span>
@@ -155,7 +1055,7 @@
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/2.jpeg" alt="photo portant de vêtements" />
+                        <img src="assets/images/images-timeline/2.jpeg" alt="photo portant de vêtements" />
                         <span>
                             2014-2017
                         </span>
@@ -171,7 +1071,7 @@
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/3.jpeg" alt=" photo chaine bijoux" />
+                        <img src="assets/images/images-timeline/3.jpeg" alt=" photo chaine bijoux" />
                         <span>
                             2014
                         </span>
@@ -187,7 +1087,7 @@
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/4.jpeg" alt="photo ecran de freelanceur" />
+                        <img src="assets/images/images-timeline/4.jpeg" alt="photo ecran de freelanceur" />
                         <span>
                             2013-2014
                         </span>
@@ -197,14 +1097,14 @@
                     <div>
                         <h5>Freelance Communication Visuelle, Graphique et Photographie:</h5>
                         <p>Tics production / Olympe 75018 / Collectif Gla / Compagnie Là, Les Gens
-                        <p>
+                            <p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/5.jpeg" alt="photo bijoux en sylicone" />
+                        <img src="assets/images/images-timeline/5.jpeg" alt="photo bijoux en sylicone" />
                         <span>
                             2009-2013
                         </span>
@@ -220,7 +1120,7 @@
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/6.jpeg" alt="photo d'un appareil photo" />
+                        <img src="assets/images/images-timeline/6.jpeg" alt="photo d'un appareil photo" />
                         <span>
                             2008-2009
                         </span>
@@ -236,7 +1136,8 @@
             <div class="item">
                 <div class="image">
                     <div>
-                        <img src="images/images-timeline/7.jpeg" alt="photo d'objectif et tirage photographique" />
+                        <img src="assets/images/images-timeline/7.jpeg"
+                            alt="photo d'objectif et tirage photographique" />
                         <span>
                             2007-2008
                         </span>
@@ -251,59 +1152,21 @@
             </div>
         </div>
     </section>
-    <!--section portfolio-->
-    <section class="portfolio" id="port">
+<!--******************************************** section formation ***************************************-->
+    <section class="formation text-uppercase pb-5" id=formationpro>
         <div class="container py-5">
-            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase">
-                <h3 class="neon-text font-weight-bold p-4">Portfolio</h3>
-            </div>
-        </div>
-        <div class="container-fluid pb-5">
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 bg-white">
-                    <img class="img-fluid" src="images/projet_big_black_cook.jpg"
-                        alt="capture ecran du projet du site big-black-cook" />
-                    <h5 class="p-3">Projet BIG BLACK COOK</h5>
-                </div>
-                <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 bg-white">
-                    <img class="img-fluid" src="images/projet_paysagiste_jo_Baobab.jpg"
-                        alt="capture ecran du projet du site Jo-Baobab" />
-                    <h5 class="p-3">Projet paysagiste JO BAOBAB</h5>
-                </div>
-                <!-- <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 bg-white">
-                        <img class="col-12" src="https://dummyimage.com/250x180/000/fff.jpg" alt="" />
-                        <h5 class="p-3">Projet 3</h5>
-                    </div>
-                    <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 bg-white">
-                        <img class="col-12" src="https://dummyimage.com/250x180/000/fff.jpg" alt="" />
-                        <h5 class="p-3">Projet 4</h5>
-                    </div>
-                    <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 bg-white">
-                        <img class="col-12" src="https://dummyimage.com/250x180/000/fff.jpg" alt="" />
-                        <h5 class="p-3">Projet 5</h5>
-                    </div>
-                    <div class="col-10 col-md-5 col-lg-4 py-4 mb-3 mr-3 bg-white">
-                        <img class="col-12" src="https://dummyimage.com/250x180/000/fff.jpg" alt="" />
-                        <h5 class="p-3">Projet 6</h5>
-                    </div> -->
-            </div>
-        </div>
-    </section>
-    <!--section formation-->
-    <section class="formation text-uppercase" id=formationpro>
-        <div class="container py-5">
-            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase">
+            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase pt-5">
                 <h3 class="neon-text font-weight-bold p-4">Formation</h3>
             </div>
         </div>
         <!--timiline2-->
-        <div class="container pb-5">
+        <div class="container pb-5 px-5">
             <!-- Section 1-->
             <div class="row align-items-center connecting-lines d-flex">
                 <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
                     <div class="circle font-weight-bold"><i class="fa fa-chevron-right"></i></div>
                 </div>
-                <div class="col-6">
+                <div class="col-9">
                     <h5>2021 Développeuse et intégratrice Web</h5>
                     <p>Descodeuses, Paris </p>
                 </div>
@@ -314,7 +1177,7 @@
                     <div class="corner top-right"></div>
                 </div>
                 <div class="col-8">
-                    <hr />
+                    <hr/>
                 </div>
                 <div class="col-2">
                     <div class="corner left-bottom"></div>
@@ -322,7 +1185,7 @@
             </div>
             <!-- Section 2-->
             <div class="row align-items-center justify-content-end connecting-lines d-flex">
-                <div class="col-6 text-right">
+                <div class="col-9 text-right">
                     <h5>2017 Community manager et web marketing</h5>
                     <p>Cours de la mairie de Paris, </p>
                 </div>
@@ -347,7 +1210,7 @@
                 <div class="col-2 text-center full-left d-inline-flex justify-content-center align-items-center">
                     <div class="circle font-weight-bold"><i class="fa fa-chevron-right"></i></div>
                 </div>
-                <div class="col-6">
+                <div class="col-9">
                     <h5>2009 Gestion de micro entreprise</h5>
                     <p>Cours de la mairie de Paris,</p>
                 </div>
@@ -366,7 +1229,7 @@
             </div>
             <!-- Section 5-->
             <div class="row align-items-center justify-content-end connecting-lines d-flex">
-                <div class="col-6 text-right">
+                <div class="col-9 text-right">
                     <h5>2007 DNAP Option communication visuelle </h5>
                     <h5>(Diplôme National d'Arts Plastiques) </h5>
                     <p>École Supérieure d'Art et de Design, Orléans,</p>
@@ -393,7 +1256,7 @@
                 <div class="col-2 text-center full-left d-inline-flex justify-content-center align-items-center">
                     <div class="circle font-weight-bold"><i class="fa fa-chevron-right"></i></div>
                 </div>
-                <div class="col-6">
+                <div class="col-9">
                     <h5>2002 Année préparatoire aux Beaux-Arts</h5>
                     <p>Atelier des Beaux Arts Glacière, Paris</p>
                 </div>
@@ -404,7 +1267,7 @@
                     <div class="corner top-right"></div>
                 </div>
                 <div class="col-8">
-                    <hr />
+                    <hr/>
                 </div>
                 <div class="col-2">
                     <div class="corner left-bottom"></div>
@@ -412,9 +1275,9 @@
             </div>
             <!-- Section 7-->
             <div class="row align-items-center justify-content-end connecting-lines d-flex">
-                <div class="col-6 text-right">
+                <div class="col-9 text-right">
                     <h5>2001 CAP photographie</h5>
-                    <p>Lycée Professionnel Régional de la Photographie et de l'Image de Paris.</p>
+                    <p>Lycée Professionnel de la Photographie et de l'Image de Paris.</p>
                 </div>
                 <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                     <div class="circle font-weight-bold"><i class="fa fa-chevron-left"></i></div>
@@ -437,17 +1300,17 @@
                 <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
                     <div class="circle font-weight-bold"><i class="fa fa-chevron-right"></i></div>
                 </div>
-                <div class="col-6">
+                <div class="col-9">
                     <h5>2000 Industries Graphiques</h5>
-                    <p>Les Gobelins, école de l'image Noisy le grand</p>
+                    <p>Les Gobelins école de l'image, Noisy le grand</p>
                 </div>
             </div>
         </div>
     </section>
-    <!--section contact-->
+<!--******************************************** section contact ***************************************-->
     <section class="contact bg" id=contacter>
-        <div class="container py-5">
-            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase">
+        <div class="container pb-5">
+            <div class="row neon-wrapper justify-content-center align-items-center section-heading text-uppercase pt-5">
                 <h3 class="neon-text font-weight-bold p-4">Contact</h3>
             </div>
         </div>
@@ -455,18 +1318,18 @@
             <div class="row">
                 <form class="d-md-flex justify-content-center p-4" action="https://formspree.io/f/mzbypken"
                     method="POST">
-                    <div class=" text-white col-sm-12 col-md-6 col-lg-4 p-2">
+                    <div class="text-white col-sm-6 col-md-6 col-lg-4 pl-4">
                         <label>
                             <p>email:</p>
                             <input type="email" name="_replyto" placeholder="* Entrez votre e-mail" required="required">
                         </label>
                         <label>
                             <p>Nom:</p>
-                            <input type="Name" name="nom" placeholder="* Entrez votre nom" required="required">
+                            <input type="name" name="nom" placeholder="* Entrez votre nom" required="required">
                         </label>
                         <label>
                             <p>Prénom:</p>
-                            <input type="Name" name="prénom" placeholder="* Entrez votre prénom" required="required">
+                            <input type="name" name="prénom" placeholder="* Entrez votre prénom" required="required">
                         </label>
                         <label>
                             <p>Télephone:</p>
@@ -474,7 +1337,7 @@
                                 required="required">
                         </label>
                     </div>
-                    <div class=" d-flex flex-column text-white col-sm-12 col-md-6 col-lg-4 p-2">
+                    <div class=" d-flex flex-column text-white col-sm-6 col-md-6 col-lg-4 pl-4">
                         <label>
                             <p>message:</p>
                             <textarea class="message" name="message" placeholder="* Taper votre message ici"
@@ -485,19 +1348,40 @@
                 </form>
             </div>
         </div>
+<!--******************************************** section footer ***************************************-->
         <footer class="footer py-2">
-            <div class="container ">
+            <div class="container">
                 <div class="row d-flex flex-column align-items-center">
-                    <div class="text-dark">Copyright © flavie francois 2021
-                    </div>
-                    <div class="icones ">
-                        <a href="https://github.com/totoro-moon"><i class="fa fa-github P-2 mr-2"></i>
-                            <a href="#!"><i class="fa fa-linkedin P-2 ml-2"></i>
+                    <p class="text-light">Copyright © flavie francois 2021</p>
+                    <div class="icones">
+                            <a href="https://github.com/totoro-moon" target="_blank"><i class="fa fa-github mr-2"></i></a>
+                            <a href="https://www.linkedin.com/in/flavie-francois/" target="_blank"><i class="fa fa-linkedin ml-2"></i></a>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </footer>
     </section>
+<!--******************************************** script ***************************************-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

@@ -1,42 +1,40 @@
-@import "./SCSS/variables.scss";
-@import "./SCSS/mixines.scss";
+@import "variables.scss";
+@import "mixines.scss";
+//************************** typo *************************************//
+@font-face {
+    font-family: "Neon";
+    src: url(assets/polices/Neon.ttf) format('truetype');
+}
 @font-face {
     font-family: "GeosansLight";
-    src: url(polices/GeosansLight.ttf) format('truetype');
+    src: url(assets/polices/GeosansLight.ttf) format('truetype');
 }
-@font-face {
-    font-family: "Ambitive";
-    src: url(polices/Ambitive.otf) format('opentype');
-}
+//**************************** html body ******************************//
 html, body{
     font-family:"GeosansLight";
     margin:0;
     padding:0;
+    background: #000;
     p {
-    color: #7878a1;
+    color: #33115e;
+    line-height: 1em;
     }
     h5 {
     color: $fontdarkpurpul;
-    font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
+    }
 }
-}
-// menu navbar
+//****************************** menu navbar ******************************//
 header{
-    .headlogo {
-    font-family: "Ambitive";
-    font-size: 3em;
-    text-decoration: none;
-    padding-left: 30px;
-    &:hover {
-        color: $pinkcolor;
-    }
-    }
-    .navbar ul li a {
+    nav ul li a {
         text-decoration: none;
+        font-weight: bold;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         }
-    .bg-d {
-        background: $bgtransparent;
+    .bg-faded {
+        background: black;
     }
     ul{
         list-style: none;
@@ -44,154 +42,126 @@ header{
     li{
         display: inline-block;
         transition: all 0.5s ease-in;
-        padding: 20px;
-        &:hover {
-            background-color: $pinkcolor;
-        }
+        padding: 10px;
     }  
-    a{
-        color:$fontdarkpurpul;
+    span,a.nav-link{
+        color:$pinkcolor;
+                &:hover {
+            color: rgb(217, 193, 250);
+        }
     }
-    }     
-@media screen and(max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: $fontdarkpurpul;
-    }
-}
-//animation logo 
-.logo {
+}     
+//*************************** animation logo ****************************//
+.logo{
+    font-family: "Neon";
     position: absolute;
-    top: 50%;
+    top: 17.5em;
     left: 50%;
     transform: translate(-50%,-50%);
+    letter-spacing: 4px;
+    color: rgb(250, 218, 244);
+    padding: 2rem 3rem 2.5rem;
+    border: 0.2rem solid rgb(217, 193, 250);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    animation: flicker 3s infinite alternate; 
+    h3 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h1{
+    font-size: 2.5rem;
+    }    
 }
-.logo a{
-    position: relative;
-    text-decoration: none;
-    width: 400px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    display: inline-block;
-    color: #fcfcfc;
-    font-size: 1em;
+.logo::-moz-selection {
+  background-color: $fontdarkpurpul;
+  color: $pinkcolor;
 }
-/* animation logo Flavie FRANCOIS index.html*/
-.logo a:before{
-content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 0;
-    height: 0;
-    background: transparent;
-    border: 3px solid transparent;
+.logo::selection {
+  background-color: $fontdarkpurpul;
+  color: $pinkcolor;
 }
-.logo a:hover:before{
-animation: animate-border 1s linear forwards;
+.logo:focus {
+  outline: none;
 }
-@keyframes animate-border{
-0% {
-    width: 0;
-    height: 0;
-    border-top-color: $pinkcolor;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+//************************** Animate neon logo ***************************//
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem $pinkcolor,
+            0 0 4rem $pinkcolor,
+            0 0 6rem $pinkcolor,
+            0 0 8rem $pinkcolor,
+            0 0 10rem $pinkcolor;
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem $fontdarkpurpul,
+            inset 0 0 1rem $fontdarkpurpul,
+            0 0 4rem $fontdarkpurpul,
+            inset 0 0 4rem $fontdarkpurpul;        
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
 }
-50% {
-    width: 100%;
-    height: 0;
-    border-top-color:$pinkcolor;
-    border-right-color: $pinkcolor;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-}
-100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: $pinkcolor;
-    border-right-color: $pinkcolor;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-}
-}
-.logo a:after{
-content: '';
-position: absolute;
-top: -2px;
-left: -2px;
-height: 100%;
-width: 0;
-height: 0;
-background: transparent;
-border: 3px solid transparent;
-}
-.logo a:hover:after{
-animation: animate-border-2 1s linear forwards;
-animation-delay: 1s;
-}
-@keyframes animate-border-2{
-0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: $pinkcolor;
-}
-50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color:$pinkcolor;
-    border-left-color: $pinkcolor;
-}
-100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: $pinkcolor;
-    border-left-color: $pinkcolor;
-}
-}
-//effet neon titre
+//********************** effet neon titre *******************************//
 .neon-text {
     @include effet-neon-rose-border;
     @include effet-neon-rose-text;
     
 }
-// image background
+//*********************** image background contact **********************//
 .bg{
-    background-image: url('images/cyberpunk-5135622_1920.jpeg');
-@include background;
+    background-image: url('assets/images/image6.jpg');
+    @include background;
 }
+//*********************** image background home *************************//
+.bg-0{  
+    background-image: url('assets/images/image4.jpg');
+    @include background;
+}
+//****************** image background parcours pro **********************//
 .bg-1{
-    background-image: url('images/buildings-1245953_1920.jpeg');
-@include background;
+    background-image: url('assets/images/image5.jpg');
+    @include background;
 }
-//home
+//****************** image background compétences **********************//
+.bg-2{
+    background-image: url('assets/images/image3.jpg');
+    @include background;
+}
+//**************************** home *********************************//
 .home {
     height:100vh;
 }
-//présentation
-.image-pres{
-    width: 350px;
+//*************************** présentation *****************************//
+.presentation{
+    // height: 95vh;
+    h6{
+        color: #a078d4;
+        font-size: large;
+    }
+    .image-pres{
+        width: 300px;
+    }
 }
-//compétences
-.Compétences {
-    background-color: $bggrissection;
+//************************* compétences *********************************//
+.Compétences{
+
+    .bloc{
+        background-color: $bgtransparent1;
+    }
 }
 .img-comp{
-    width: 30%;
-    }
-//parcours
-//timeline1
+    width: 20%;
+}
+//*********************** parcours pro timeline1 ***********************//
 .item {
     display: flex;
     max-width: 100%;
@@ -242,7 +212,6 @@ animation-delay: 1s;
         padding: 0.75em;
         margin: 1em 0;
         h5{
-        // font-size: 1em;
         margin: 0;
         padding: 0 0 0.5em 0;
         letter-spacing: 0.1em;
@@ -262,17 +231,89 @@ animation-delay: 1s;
     }
 }
 }
-//portfolio
+//************************ portfolio modal **************************//
 .portfolio{
-    background-color: $bggrissection;
+    h5{
+        color: white;
+    }
+.modal-full {
+    width: 100vw;
+    height: 150vh;
 }
-//formation-timeline2
+.modal-full .modal-dialog {
+    margin: 0;
+    height: 100%;
+}
+.modal-full .modal-content {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-full .modal-content .modal-body {
+    padding: 0;
+}
+.modal-full .modal-content .carousel {
+    height: 100vh;
+}
+.modal-full .modal-content .carousel-actions {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.modal-full .modal-content .carousel-inner {
+    height: 100%;
+}
+.modal-full .modal-content .carousel-inner>.carousel-item {
+    height: 100%;
+    top: 0;
+}
+.modal-full .modal-content .carousel-inner>.carousel-item>img {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+button.close {
+    color: #fff; 
+    opacity: 1;
+    font-family:Helvetica, sans-serif;
+    &:hover {
+        color: rgb(206, 205, 205);}
+}
+.modal-title{
+    opacity: 1;
+    color: #fff;
+}
+.modal-link{
+display: flex;
+font-size: 20px;
+}
+.carousel-item p{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 1%;
+}
+}
+//************************** formation-timeline2 ******************//
 .formation {
+    h5 {
+    color: $colortimeline2;
+    font-size: 1.4em;
+}
+    p {
+    color: rgb(219, 217, 217);
+    }
     .circle {
         padding: 16px 20px;
         border-radius: 30%;
         background-color: $colortimeline2;
-        color: #fff;
+        color:rgb(243, 242, 242);
         max-height: 50px;
         z-index: 2;
     }
@@ -292,14 +333,14 @@ animation-delay: 1s;
     }
     .connecting-lines.row .col-2.full::after {
         height: 100%;
-        left: calc(49% - 2px);
+        left: calc(49.8% - 2px);
     }
     .connecting-lines.row .col-2.full-left::after {
         height: 100%;
         left: 50%;
         top: 0;
     }
-        .connecting-lines.row .col-2.top::after {
+    .connecting-lines.row .col-2.top::after {
         height: 50%;
         left: 50%;
         top: 0;
@@ -341,7 +382,7 @@ animation-delay: 1s;
         top: calc(50% - 3px);
     }
 }
-//contact
+//****************************** contact **************************//
 form{
     p{
     color: white;
@@ -349,7 +390,7 @@ form{
     }
     input{
         background-color: $bgtransparent;
-        width: 300px;
+        width: 280px;
         border: white 1px solid;
     }
     textarea {
@@ -357,22 +398,41 @@ form{
         width: 300px;
         height: 210px;
         border: white 1px solid;
-
         }
     button{
         width: 70px;
         border: white 1px solid;
     &:hover {
         background-color: $pinkcolor;
-        
         }
     }
 }
-//footer
+//************************* footer ***********************//
 footer{
-    background-color: $bgtransparent;
-    .icones i{
+    background-color: black ;
+.icones i{
     font-size:36px;
-    color:black;
+    color:#fff;
 } 
+.text-light{
+    font-size: 16px;
+    color:#fff;
 }
+}
+// toute les sections
+section{
+    padding-top: 45px;
+}
+// @media screen and (max-width: 1030px) {
+//     html,body{
+//         background: #fff;
+//     }
+//     h1{
+//         font-size: 1px;
+//     }
+//     .logo {
+//         top: 300px;
+//         letter-spacing: 2px;
+//         padding: 10px, 10px;
+//     }
+//     }
