@@ -146,6 +146,7 @@ header{
     h6{
         color: #a078d4;
         font-size: large;
+        text-align: justify;
     }
     .image-pres{
         width: 300px;
@@ -423,16 +424,56 @@ footer{
 section{
     padding-top: 45px;
 }
-// @media screen and (max-width: 1030px) {
-//     html,body{
-//         background: #fff;
-//     }
-//     h1{
-//         font-size: 1px;
-//     }
-//     .logo {
-//         top: 300px;
-//         letter-spacing: 2px;
-//         padding: 10px, 10px;
-//     }
-//     }
+@media screen and (max-width: 1030px) {
+    header{
+        li{
+            padding: 0px;
+        }  
+    } 
+    .logo {
+        top: 500px;
+        letter-spacing: 2px;
+        padding: 10px, 10px;
+    }
+    .carousel-item>img {
+        width: 80%;
+    }
+    }
+@media screen and (max-width: 770px) {
+    header{
+        li{
+            padding: 10px;
+        }  
+    } 
+    .logo {
+        top: 300px;
+        padding: 20px;
+    h1{
+        font-size: 2rem;
+        } 
+    }
+    .bg{
+        @include background_mobile2;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .bg-0{  
+        @include background_mobile;
+    }
+    .bg{
+        @include background_mobile1;
+    }
+    .presentation{
+        h6{
+            font-size: small;
+        }
+    }
+    .logo {
+        top: 230px;
+        padding: 15px;
+    h1{
+        font-size: 0.8rem;
+        } 
+    }
+}

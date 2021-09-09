@@ -185,6 +185,7 @@ header span:hover, header a.nav-link:hover {
 .presentation h6 {
   color: #a078d4;
   font-size: large;
+  text-align: justify;
 }
 
 .presentation .image-pres {
@@ -508,5 +509,72 @@ footer .text-light {
 
 section {
   padding-top: 45px;
+}
+
+@media screen and (max-width: 1030px) {
+  header li {
+    padding: 0px;
+  }
+  .logo {
+    top: 500px;
+    letter-spacing: 2px;
+    padding: 10px, 10px;
+  }
+  .carousel-item > img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header li {
+    padding: 10px;
+  }
+  .logo {
+    top: 300px;
+    padding: 20px;
+  }
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .bg {
+    /* hauteur */
+    width: 100%;
+    /* Center et placer l'image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .bg-0 {
+    /* hauteur */
+    width: 100%;
+    /* Center et placer l'image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    position: relative;
+  }
+  .bg {
+    /* hauteur */
+    width: 100%;
+    /* Center et placer l'image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 150px;
+  }
+  .presentation h6 {
+    font-size: small;
+  }
+  .logo {
+    top: 230px;
+    padding: 15px;
+  }
+  .logo h1 {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
