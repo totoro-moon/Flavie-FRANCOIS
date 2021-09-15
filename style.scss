@@ -420,10 +420,12 @@ footer{
     color:#fff;
 }
 }
-// toute les sections
+//************************* toute les sections ***********************//
 section{
     padding-top: 45px;
 }
+//************************* media queries ***********************//
+
 @media screen and (max-width: 1030px) {
     header{
         li{
@@ -451,6 +453,9 @@ section{
     h1{
         font-size: 2rem;
         } 
+    h2{
+        font-size: 1rem;
+    }
     }
     .bg{
         @include background_mobile2;
@@ -475,5 +480,8 @@ section{
     h1{
         font-size: 0.8rem;
         } 
+        h2{
+            font-size: 7px;
+        }
     }
 }
