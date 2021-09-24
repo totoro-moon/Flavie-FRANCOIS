@@ -112,7 +112,7 @@ header{
 }
 //********************** effet neon titre *******************************//
 .neon-text {
-    @include effet-neon-rose-border;
+    //@include effet-neon-rose-border;
     @include effet-neon-rose-text;
     
 }
